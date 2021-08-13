@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>forms</title>
+	<style type="text/css">
+		*{
+			margin: 3px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>A Simple Reg Form</h1>
+	<form action="https://www.torilo.com/student-db.net" method="POST" target="_blank" autocomplete="on">
+	<fieldset>
+		<legend>Personal info.</legend>
+		<label for="un">Username</label>
+		<input id="un" type="text" name="username" minlength="5" maxlength="10"><br>
+
+		<label for="em">Email</label>
+		<input type="email" name="email">
+
+		<label>password</label>
+		<input type="password" name="password"><br>
+
+		<label>Date of Birth</label>
+		<input type="date" name="dob">
+	</fieldset>	
+	<fieldset>
+		<legend>Other info.</legend>
+		<label>Tell us about yourself</label><br>
+		<textarea name="details" cols="20" rows="5">
+			what is on your mind?
+		</textarea><br><br>
+
+		<p>What is your Favourite language?</p>
+		<label for="eng">English</label>
+		<input id="eng" type="radio" name="language" value="English">
+
+		<label for="span">Spanish</label>
+		<input id="span" type="radio" name="language" value="Spanish">
+
+		<label for="ital">Italian</label>
+		<input id="ital" type="radio" name="language" value="Italian">
+
+		<label for="fren">French</label>
+		<input id="fren" type="radio" name="language" value="French">
+
+		<label for="port">Portuguesse</label>
+		<input id="port" type="radio" name="language" value="Portuguesse"><br>
+
+		<label for="gp">Academic Performance</label>
+		<select id="gp" name="gp" size="1">
+			<option value="first">5.0 - 4.50</option>
+			<option value="2-1">4.49 - 3.50</option>
+			<option value="2-2">3.49 -2.50</option>
+			<option value="3rd">2.49 - 1.50</option>
+			<option value="pass">1.00 - 1.49</option>
+		</select><br><br>
+
+		<label for="sports"> What is your favourite sport?</label><br>
+		<input id="sports" type="checkbox" name="sports" value="football">Football <br>
+		<input id="sports" type="checkbox" name="sports" value="baseball">Baseball<br>
+		<input id="sports" type="checkbox" name="sports" value="swimming">Swimming<br>
+		<input id="sports" type="checkbox" name="sports" value="basketball">Basketball<br><br>
+
+		<p>Upload a copy of your Resume</p>
+		<input type="file" name="cv" ><br>
+
+
+
+
+		<br><!--<input type="submit" value="Submit details">-->
+		
+	</fieldset>	
+		<input type="image" src="submit.jpeg" width="150" height="60" value="submit">
+	</form>
+</body>
+</html>
